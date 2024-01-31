@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow-y: scroll;
+  background: url("bg.png"), -webkit-linear-gradient(bottom, #0250c5, #d43f8d);
+}
+::selection{
+  color: #fff;
+  background: #d43f8d;
+}
+.container{
+  min-width: 330px;
+  width:50%;
+  background: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 50px 35px 10px 35px;
+}
+.container header{
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+.container .form-outer{
+  width: 100%;
+  overflow: hidden;
+}
+.container .form-outer form{
+  display: flex;
+  width: 100%;
+}
+.form-outer form .page{
+  width: 75%;
+  transition: margin-left 0.3s ease-in-out;
+}
+.form-outer form .page .title{
+  text-align: left;
+  font-size: 25px;
+  font-weight: 500;
+}
+.form-outer form .page .field{
+  width: 125%;
+  height: 45px;
+  margin: 45px 0;
+  display: flex;
+  position: relative;
+}
+form .page .field .label{
+  text-align: left;
+  position: absolute;
+  width:100%;
+  top: -30px;
+  font-weight: 500;
+}
+form .page .field input{
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+.form-outer form .page .checkboxfield  label {
+  
+  display: inline-flexbox;
+  margin-bottom: 2px;
+  margin-left: 10px;
+}
+
+
+
+.form-outer form .page .checkboxfield input[type='checkbox']:checked {
+  background-color: #023047;
+}
+.form-outer form .page .checkboxfield input[type='checkbox']:checked:after {
+  content: '\2713';
+  color:white;
+}
+.form-outer form .page .checkboxfield input[type='checkbox']{
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  width: 20px !important;
+  height: 20px !important;
+  appearance:none;
+  border-radius:10%;
+  border: 1px solid rgb(191 35 42 / 90%);
+  box-shadow: none;
+  font-size: 1em;
+}
+
+
+
+
+
+form .page .field select{
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+  margin-right: 20px ;
+}
+
+form .page .field button{
+  width: 100%;
+  height: calc(100% + 5px);
+  border: none;
+  background: #d33f8d;
+  margin-top: -20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+form .page .field button:hover{
+  background: #000;
+}
+form .page .btns button{
+  margin-top: -20px!important;
+}
+form .page .btns button.prev{
+  margin-right: 3px;
+  font-size: 17px;
+}
+form .page .btns button.next{
+  margin-left: 3px;
+}
+.form-container {
+  margin-top: -50px;
+}
+
+
+

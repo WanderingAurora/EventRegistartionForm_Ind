@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Blithchron Event Registration Form </title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>Blithchron Event Registration Form</header>
+      <div class="form-outer">
+        <form id="registrationForm" action="#">
+          <div class="page slide-page">
+            <div class="field">
+              <div class="label">Enter Name</div>
+              <input type="text" id="name" name="name" autocomplete="given-name" required />
+            </div>
+            <div class="field">
+              <div class="label">Email Address</div>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="field">
+              <div class="label">Enter Phone Number(preferably Whatsapp)</div>
+              <input type="tel" id="phone" name="phone" maxlength="14" minlength="7" required />
+            </div>
+            <div class="field">
+              <div class="label">Enter College/Institution Name</div>
+              <input type="text" id="college" name="college" autocomplete="'given-name" required />
+            </div>
+            <div class="field">
+              <div class="label">Enter Drive Link for Audition</div>
+              <input type="url" id="link" required />
+            </div>
+
+            <div class="checkboxfield">
+              <div class="label"></div>
+              <label>
+                <input type="checkbox" class="option" required>   By checking this box , you acknowledge that your personal details may be collected for registration purposes and may be shared with third parties as required<label>
+
+            </div>
+
+            <div class="field btns">
+              <button class="submit">Submit</button>
+              <button type="button" id="clearForm">Clear Form</button>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
